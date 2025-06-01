@@ -1,6 +1,8 @@
 # Ignore virtual environment folder
+phishing_env/
 venv/
 env/
+.phishing_env/
 .venv/
 .env/
 
@@ -8,7 +10,13 @@ env/
 __pycache__/
 *.pyc
 *.pyo
-
+# Ignore installed packages folders if inside project (sometimes)
+transformers/
+datasets/
+torch/
+sentence-transformers/
+scikit-learn/
+pandas/
 # Ignore Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
